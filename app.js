@@ -9,7 +9,7 @@ server.listen(8080);
 // routing
 app.get('/', function (req, res) {
 
-  res.sendfile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/index.html');
 }).on('error', function(e){
   console.log("Got error: " + e.message);
 });
